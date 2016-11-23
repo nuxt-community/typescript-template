@@ -23,6 +23,11 @@ export default {
       name: req ? 'server' : 'client'
     }
   },
+  head () {
+    return {
+      title: `About Page (${this.name}-side)`
+    }
+  },
   components: {
     Logo
   }
