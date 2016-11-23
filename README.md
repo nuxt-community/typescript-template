@@ -1,10 +1,10 @@
 # Starter
 
-A starter Nuxt.js project template for Nuxt.js without the distraction of a complicated development environment.
+A starter [Nuxt.js](https://github.com/nuxt/nuxt.js) project template without the distraction of a complicated development environment.
 
 ## Usage
 
-This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
+This is a project template for [Nuxt.js](https://github.com/nuxt/nuxt.js).
 
 ``` bash
 $ npm install -g vue-cli      # Install vue-cli if you haven't already
