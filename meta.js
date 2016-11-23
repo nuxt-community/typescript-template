@@ -1,5 +1,4 @@
 module.exports = {
-  helpers: {
   prompts: {
     name: {
       'type': 'string',
