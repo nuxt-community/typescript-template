@@ -1,4 +1,9 @@
 module.exports = {
+  helpers: {
+    raw: function(options) {
+      return options.fn(this)
+    }
+  },
   prompts: {
     name: {
       'type': 'string',
