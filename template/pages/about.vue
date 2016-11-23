@@ -1,3 +1,4 @@
+{{{{raw}}}}
 <template>
   <section>
     <logo/>
@@ -46,3 +47,4 @@ a
   margin-top: 50px;
 }
 </style>
+{{{{/raw}}}}
