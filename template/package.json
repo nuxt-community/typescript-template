@@ -5,9 +5,12 @@
   "author": "{{ author }}",
   "private": true,
   "dependencies": {
-    "nuxt": "^0.6.9"
+    "nuxt": "latest",
   },
   "scripts": {
-    "start": "nuxt"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
   }
 }
