@@ -1,0 +1,13 @@
+{
+  "name": "{{ name }}",
+  "version": "1.0.0",
+  "description": "{{ description }}",
+  "author": "{{ author }}",
+  "private": true,
+  "dependencies": {
+    "nuxt": "^0.6.9"
+  },
+  "scripts": {
+    "start": "nuxt"
+  }
+}
