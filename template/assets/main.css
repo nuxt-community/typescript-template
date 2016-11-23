@@ -1,0 +1,72 @@
+html, body
+{
+  background-color: #fff;
+  color: #2e2f30;
+  letter-spacing: 0.5px;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+
+section
+{
+  margin: 0;
+  width: 100%;
+  padding-top: 150px;
+  text-align: center;
+}
+
+a, a:visited
+{
+  display: inline-block;
+  color: #9aabb1;
+  letter-spacing: 1px;
+  background-color: #fff;
+  border: 2px solid #9aabb1;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 45px;
+}
+
+a:hover, a:focus
+{
+  color: #fff;
+  background-color: #9aabb1;
+}
+
+h1
+{
+  color: #505153;
+  font-weight: 300;
+  font-size: 2em;
+  margin: 0;
+}
+
+.page-enter-active, .page-leave-active
+{
+  transition: opacity .5s
+}
+.page-enter, .page-leave-active
+{
+  opacity: 0
+}
+
+.bounce-enter-active
+{
+  animation: bounce-in .8s;
+}
+.bounce-leave-active
+{
+  animation: bounce-out .5s;
+}
+
+@keyframes bounce-in {
+  0% { transform: scale(0) }
+  50% { transform: scale(1.5) }
+  100% { transform: scale(1) }
+}
+@keyframes bounce-out {
+  0% { transform: scale(1) }
+  50% { transform: scale(1.5) }
+  100% { transform: scale(0) }
+}
