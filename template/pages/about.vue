@@ -18,7 +18,6 @@
 import Logo from '~components/Logo.vue'
 
 export default {
-  transition: 'bounce',
   data ({ req }) {
     return {
       name: req ? 'server' : 'client'
