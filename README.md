@@ -2,6 +2,8 @@
 
 A starter [Nuxt.js](https://github.com/nuxt/nuxt.js) project template without the distraction of a complicated development environment.
 
+Live demo: https://starter.nuxtjs.org
+
 ## Installation
 
 This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
