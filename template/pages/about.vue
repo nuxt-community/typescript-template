@@ -1,14 +1,14 @@
 {{{{raw}}}}
 <template>
-  <section>
+  <section class="container">
     <logo/>
-    <h1 class="Title">
+    <h1 class="title">
       This page is loaded from the {{ name }}
     </h1>
-    <h2 class="Info" v-if="name === 'client'">
+    <h2 class="info" v-if="name === 'client'">
       Please refresh the page
     </h2>
-    <router-link to="/">
+    <router-link class="button" to="/">
       Home page
     </router-link>
   </section>
@@ -35,18 +35,18 @@ export default {
 </script>
 
 <style scoped>
-.Title
+.title
 {
   margin-top: 50px;
 }
-.Info
+.info
 {
   font-weight: 300;
   color: #9aabb1;
   margin: 0;
   margin-top: 10px;
 }
-a
+.button
 {
   margin-top: 50px;
 }

@@ -8,7 +8,7 @@ html, body
   margin: 0;
 }
 
-section
+.container
 {
   margin: 0;
   width: 100%;
@@ -16,7 +16,7 @@ section
   text-align: center;
 }
 
-a, a:visited
+.button, .button:visited
 {
   display: inline-block;
   color: #9aabb1;
@@ -28,13 +28,13 @@ a, a:visited
   padding: 15px 45px;
 }
 
-a:hover, a:focus
+.button:hover, .button:focus
 {
   color: #fff;
   background-color: #9aabb1;
 }
 
-h1
+.title
 {
   color: #505153;
   font-weight: 300;
