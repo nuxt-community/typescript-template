@@ -11,4 +11,5 @@ module.exports = {
     ]
   },
   css: ['~assets/css/main.css'],
+  loading: { color: '#3B8070' }
 }
