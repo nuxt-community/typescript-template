@@ -1,9 +1,9 @@
 <template>
   <section class="container">
     <!--
-      src="/logo.png" will be replaced by Webpack.
+      src="../assets/img/logo.png" will be replaced by Webpack.
     -->
-    <img src="/logo.png" alt="Nuxt.js Logo" />
+    <img src="../assets/img/logo.png" alt="Nuxt.js Logo" />
     <h1 class="title">
       A minimalistic framework <br>for server-rendered Vue.js applications
     </h1>

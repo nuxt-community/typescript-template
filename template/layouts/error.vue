@@ -1,17 +1,17 @@
 <template>
   <section class="container">
     <!--
-      src="/logo.png" will be replaced by Webpack.
+      src="../assets/img/logo.png" will be replaced by Webpack.
     -->
-    <img src="/logo.png" alt="Nuxt.js Logo" />
+    <img src="../assets/img/logo.png" alt="Nuxt.js Logo" />
     <!--
       Read error property to display more details of the Error.
     -->
     <h1 class="title">
-      {{ error.statusCode }}
+
     </h1>
     <h2 class="info">
-      {{ error.message }}
+
     </h2>
     <!--
       Use router-link to create a link to an other pages.
