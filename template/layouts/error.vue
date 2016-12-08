@@ -4,51 +4,41 @@
       src="/logo.png" will be replaced by Webpack.
     -->
     <img src="/logo.png" alt="Nuxt.js Logo" />
+    <!--
+      Read error property to display more details of the Error.
+    -->
     <h1 class="title">
-      This page is loaded from the {{ name }}
+      {{ error.statusCode }}
     </h1>
-    <h2 class="info" v-if="name === 'client'">
-      Please refresh the page
+    <h2 class="info">
+      {{ error.message }}
     </h2>
     <!--
       Use router-link to create a link to an other pages.
     -->
     <router-link class="button" to="/">
-      Home page
+      Homepage
     </router-link>
   </section>
 </template>
 
 <script>
 export default {
-  data ({ req }) {
-    return {
-      name: req ? 'server' : 'client'
-    }
-  },
-  head () {
-    // Use vue-meta to change HTML Head Meta Title for this page.
-    return {
-      title: `About Page (${this.name}-side)`
-    }
-  }
+  props: ['error']
 }
 </script>
 
 <style scoped>
-/*
-  Scoped : This css belongs to this component only
-*/
 .title
 {
-  margin-top: 50px;
+  margin-top: 15px;
+  font-size: 5em;
 }
 .info
 {
   font-weight: 300;
   color: #9aabb1;
   margin: 0;
-  margin-top: 10px;
 }
 .button
 {

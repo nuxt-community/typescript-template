@@ -1,9 +1,15 @@
 <template>
   <section class="container">
-    <img src="~static/logo.png" alt="Nuxt.js Logo" />
+    <!--
+      src="/logo.png" will be replaced by Webpack.
+    -->
+    <img src="/logo.png" alt="Nuxt.js Logo" />
     <h1 class="title">
       A minimalistic framework <br>for server-rendered Vue.js applications
     </h1>
+    <!--
+      Use router-link to create a link to an other pages.
+    -->
     <router-link class="button" to="/about">
       About page
     </router-link>
@@ -11,6 +17,9 @@
 </template>
 
 <style scoped>
+/*
+  Scoped : This css belongs to this component only
+*/
 .title
 {
   margin: 50px 0;
