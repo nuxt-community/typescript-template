@@ -1,3 +1,4 @@
+{{{{raw}}}}
 <template>
   <section class="container">
     <!--
@@ -5,7 +6,7 @@
     -->
     <img src="../assets/img/logo.png" alt="Nuxt.js Logo" />
     <h1 class="title">
-      This page is loaded from the starter
+      This page is loaded from the {{ name }}
     </h1>
     <h2 class="info" v-if="name === 'client'">
       Please refresh the page
@@ -18,7 +19,7 @@
     </router-link>
   </section>
 </template>
-
+{{{{/raw}}}}
 <script>
 export default {
   data ({ req }) {
