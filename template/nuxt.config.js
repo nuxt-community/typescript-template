@@ -1,4 +1,7 @@
 module.exports = {
+  /*
+  ** Headers of the page
+  */
   head: {
     title: 'starter',
     meta: [
@@ -10,6 +13,12 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }
     ]
   },
+  /*
+  ** Global CSS
+  */
   css: ['~assets/css/main.css'],
+  /*
+  ** Customize the progress-bar color
+  */
   loading: { color: '#3B8070' }
 }
