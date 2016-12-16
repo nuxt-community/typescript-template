@@ -4,7 +4,7 @@
     <!--
       src="../assets/img/logo.png" will be replaced by Webpack.
     -->
-    <img src="../assets/img/logo.png" alt="Nuxt.js Logo" />
+    <img src="../assets/img/logo.png" alt="Nuxt.js Logo" class="logo" />
     <h1 class="title">
       This page is loaded from the {{ name }}
     </h1>
