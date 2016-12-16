@@ -2,7 +2,7 @@
   <!--
     REQUIRED
     The nuxt-container component is the container of your Vue.js application
-    Nuxt replace automatically the nuxt-container component by <div id="_app"></div>
+    Nuxt replace automatically the nuxt-container component by <div id="__nuxt"></div>
   -->
   <nuxt-container>
     <!--
