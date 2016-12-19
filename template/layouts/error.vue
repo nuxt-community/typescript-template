@@ -8,9 +8,9 @@
     <h2 class="info">
       {{ error.message }}
     </h2>
-    <router-link class="button" to="/" v-if="error.statusCode === 404">
+    <nuxt-link class="button" to="/" v-if="error.statusCode === 404">
       Homepage
-    </router-link>
+    </nuxt-link>
   </section>
 </template>
 {{{{/raw}}}}
