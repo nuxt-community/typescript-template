@@ -1,9 +1,6 @@
 {{{{raw}}}}
 <template>
   <section class="container">
-    <!--
-      src="../assets/img/logo.png" will be replaced by Webpack.
-    -->
     <img src="../assets/img/logo.png" alt="Nuxt.js Logo" class="logo" />
     <h1 class="title">
       This page is loaded from the {{ name }}
@@ -11,12 +8,9 @@
     <h2 class="info" v-if="name === 'client'">
       Please refresh the page
     </h2>
-    <!--
-      Use router-link to create a link to an other pages.
-    -->
-    <router-link class="button" to="/">
+    <nuxt-link class="button" to="/">
       Home page
-    </router-link>
+    </nuxt-link>
   </section>
 </template>
 {{{{/raw}}}}
@@ -28,7 +22,6 @@ export default {
     }
   },
   head () {
-    // Use vue-meta to change HTML Head Meta Title for this page.
     return {
       title: `About Page (${this.name}-side)`
     }
@@ -37,9 +30,6 @@ export default {
 </script>
 
 <style scoped>
-/*
-  Scoped : This css belongs to this component only
-*/
 .title
 {
   margin-top: 50px;

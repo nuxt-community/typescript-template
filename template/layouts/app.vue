@@ -1,19 +1,6 @@
 <template>
-  <!--
-    REQUIRED
-    The nuxt-container component is the container of your Vue.js application
-    Nuxt replace automatically the nuxt-container component by <div id="__nuxt"></div>
-  -->
   <nuxt-container>
-    <!--
-      REQUIRED
-      The nuxt component contains the content of your current page.
-      Nuxt replace automatically the nuxt component by <router-view></router-view>
-    -->
     <nuxt/>
-    <!--
-      Example : This footer will be display on every routes.
-    -->
     <my-footer/>
   </nuxt-container>
 </template>
