@@ -1,8 +1,8 @@
 <template>
-  <nuxt-container>
+  <div>
     <nuxt/>
     <my-footer/>
-  </nuxt-container>
+  </div>
 </template>
 
 <script>
