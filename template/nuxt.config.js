@@ -25,6 +25,6 @@ module.exports = {
     '~assets/css/main.css'
   ],
   build: {
-
+    vendor: ['axios', 'gsap']
   }
 }
