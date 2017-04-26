@@ -9,9 +9,7 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
   /*
   ** Customize the progress-bar color
@@ -20,11 +18,15 @@ module.exports = {
   /*
   ** Build configuration
   */
-  css: [
-    'tachyons/css/tachyons.min.css',
-    '~assets/css/main.css'
-  ],
+  css: ['tachyons/css/tachyons.min.css', '~assets/css/main.css'],
   build: {
-    vendor: ['axios', 'gsap']
+    vendor: ['axios', 'gsap'],
+    extend(config) {
+      for (rule of config.module.rules) {
+        if (rule.loader === 'vue-loader') {
+          rule.query.loaders.ts = 'ts-loader?{"appendTsSuffixTo":["\\\\.vue$"]}'
+        }
+      }
+    }
   }
 }

@@ -1,0 +1,1 @@
+//Deleting this file will cause "TS18003: No inputs were found in config file 'tsconfig.json'"
