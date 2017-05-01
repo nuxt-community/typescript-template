@@ -2948,6 +2948,13 @@ number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
 
+nuxt-class-component@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/nuxt-class-component/-/nuxt-class-component-1.0.1.tgz#f858f03cb680c7ee797c05e2d1edb02a60e225f2"
+  dependencies:
+    vue "^2.3.0"
+    vue-class-component "^5.0.1"
+
 nuxt@^0.10.6:
   version "0.10.6"
   resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-0.10.6.tgz#cdd261e9c234312ebd1dd58384c7c87d5c1bd60a"
@@ -4426,6 +4433,10 @@ vue-template-es2015-compiler@^1.2.2:
 vue@^2.2.6:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.2.6.tgz#451714b394dd6d4eae7b773c40c2034a59621aed"
+
+vue@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/vue/-/vue-2.3.0.tgz#bc44db0488c5245c788304c7683efe7b4c862d82"
 
 vuex@^2.2.1:
   version "2.3.1"

@@ -5,6 +5,7 @@
     "axios": "^0.16.1",
     "gsap": "^1.19.1",
     "nuxt": "^0.10.6",
+    "nuxt-class-component": "^1.0.1",
     "tachyons": "^4.7.0",
     "vue-class-component": "^5.0.1"
   },
