@@ -3682,6 +3682,10 @@ reduce-function-call@^1.0.1:
   dependencies:
     balanced-match "^0.4.2"
 
+reflect-metadata@^0.1.9:
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/reflect-metadata/-/reflect-metadata-0.1.10.tgz#b4f83704416acad89988c9b15635d47e03b9344a"
+
 regenerate@^1.2.1:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/regenerate/-/regenerate-1.3.2.tgz#d1941c67bad437e1be76433add5b385f95b19260"
@@ -4352,7 +4356,7 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
-vue-class-component@^5.0.1:
+vue-class-component@^5.0.0, vue-class-component@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/vue-class-component/-/vue-class-component-5.0.1.tgz#feda06c3da266cee9064e224ba491e089923dce8"
 
@@ -4384,6 +4388,13 @@ vue-meta@^0.5.6:
     deepmerge "^1.2.0"
     lodash.isplainobject "^4.0.6"
     object-assign "^4.1.0"
+
+vue-property-decorator@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/vue-property-decorator/-/vue-property-decorator-5.0.1.tgz#1be12d62e84b0c83732a03df7a4a8f882a410001"
+  dependencies:
+    reflect-metadata "^0.1.9"
+    vue-class-component "^5.0.0"
 
 vue-router@^2.3.1:
   version "2.5.2"
@@ -4437,6 +4448,10 @@ vue@^2.2.6:
 vue@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.3.0.tgz#bc44db0488c5245c788304c7683efe7b4c862d82"
+
+vuex-class@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/vuex-class/-/vuex-class-0.2.0.tgz#84fb2f34ddbf7384381576ed3222b3d2abad5649"
 
 vuex@^2.2.1:
   version "2.3.1"

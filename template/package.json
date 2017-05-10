@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "dependencies": {
     "axios": "^0.16.1",
@@ -7,7 +7,9 @@
     "nuxt": "^0.10.6",
     "nuxt-class-component": "^1.0.1",
     "tachyons": "^4.7.0",
-    "vue-class-component": "^5.0.1"
+    "vue-class-component": "^5.0.1",
+    "vue-property-decorator": "^5.0.1",
+    "vuex-class": "^0.2.0"
   },
   "scripts": {
     "dev": "nuxt",
@@ -16,13 +18,6 @@
     "generate": "nuxt generate"
   },
   "devDependencies": {
-    "babel-eslint": "^7.1.1",
-    "eslint": "^3.15.0",
-    "eslint-config-standard": "^6.2.1",
-    "eslint-loader": "^1.6.1",
-    "eslint-plugin-html": "^2.0.0",
-    "eslint-plugin-promise": "^3.4.1",
-    "eslint-plugin-standard": "^2.0.1",
     "ts-loader": "^2.0.3",
     "typescript": "^2.2.2"
   }
