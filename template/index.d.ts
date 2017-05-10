@@ -4,6 +4,9 @@
 declare module "~components/*" {
 }
 
+declare module "~layouts/*" {
+}
+
 declare module "~pages/*" {
 }
 
