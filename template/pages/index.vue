@@ -12,39 +12,21 @@
     </div>
   </section>
 </template>
+
 <script lang="ts">
 import Vue from "vue";
 import Component from "nuxt-class-component"
-import axios from "~plugins/axios"
-
-import Card from "~components/Card.vue"
-
-import { mapState } from "vuex"
-
-export type Person = {
-  first_name: string,
-  last_name: string
-}
+import Card from "~components/Card"
+import { State, Getter } from "vuex-class"
 
 @Component({
   components: {
     Card
-  },
-  computed: {
-    ...mapState(['selected']),
-    selectedPerson: function () {
-      const p = this.people.find(person => person.id === this.selected)
-      return p ? p : { first_name: 'Please,', last_name: 'select someone' }
-    }
   }
 })
 export default class extends Vue {
-  people: Person[] = []
-
-  async asyncData() {
-    const response = await axios.get('/random-data.json')
-    const people = response.data.slice(0, 10)
-    return { people }
-  }
+  @State selected
+  @State people
+  @Getter selectedPerson
 }
 </script>

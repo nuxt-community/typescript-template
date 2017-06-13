@@ -1,1 +1,4 @@
-//Deleting this file will cause "TS18003: No inputs were found in config file 'tsconfig.json'"
+declare module "*.vue" {
+  import Vue from 'vue'
+  export default typeof Vue
+}

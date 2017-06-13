@@ -20,13 +20,7 @@ module.exports = {
   */
   css: ['tachyons/css/tachyons.min.css', '~assets/css/main.css'],
   build: {
-    vendor: ['axios', 'gsap'],
-    extend(config) {
-      for (rule of config.module.rules) {
-        if (rule.loader === 'vue-loader') {
-          rule.query.loaders.ts = 'ts-loader?{"appendTsSuffixTo":["\\\\.vue$"]}'
-        }
-      }
-    }
-  }
+    vendor: ['axios', 'gsap', 'vuex-class', 'nuxt-class-component']
+  },
+  modules: ['~modules/typescript.ts']
 }

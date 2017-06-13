@@ -11,20 +11,12 @@
 <script lang="ts">
 import Vue from "vue"
 import Component from "nuxt-class-component"
+import { Prop } from "vue-property-decorator"
+import { Action } from "vuex-class"
 
-import { mapMutations } from "vuex"
-
-@Component({
-  props: {
-    person: Object
-  },
-  methods: {
-    ...mapMutations([
-      "select"
-    ])
-  }
-})
+@Component({})
 export default class Card extends Vue {
-  person
+  @Prop() person
+  @Action select
 }
 </script>
