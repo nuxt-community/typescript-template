@@ -9,7 +9,7 @@ Live demo: https://nuxt-typescript-starter.johnlindquist.com
 This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 
 ``` bash
-$ vue init johnlindquist/nuxt-typescript-starter my-project
+$ vue init nuxt-community/typescript-template my-project
 $ cd my-project
 # install dependencies
 $ npm install # Or yarn install
