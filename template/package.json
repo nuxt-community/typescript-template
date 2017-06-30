@@ -5,7 +5,7 @@
   "dependencies": {
     "axios": "^0.16.2",
     "gsap": "^1.19.1",
-    "nuxt": "^1.0.0-alpha4",
+    "nuxt": "^1.0.0-alpha.4",
     "nuxt-class-component": "^1.0.1",
     "tachyons": "^4.7.4",
     "vue-class-component": "^5.0.1",
