@@ -17,8 +17,7 @@
     "allowJs": true,
     "baseUrl": ".",
     "paths": {
-      "~": ["./"],
-      "~api/*": ["./api/*"],
+      "~/*" : ["./*"],
       "~assets/*": ["./assets/*"],
       "~components/*": ["./components/*"],
       "~middleware/*": ["./middleware/*"],

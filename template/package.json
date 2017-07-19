@@ -1,15 +1,15 @@
 {
   "name": "nuxt-typescript-starter",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": true,
   "dependencies": {
     "axios": "^0.16.2",
-    "gsap": "^1.19.1",
-    "nuxt": "^1.0.0-alpha4",
+    "gsap": "^1.20.2",
+    "nuxt": "^1.0.0-alpha.5",
     "nuxt-class-component": "^1.0.1",
     "tachyons": "^4.7.4",
-    "vue-class-component": "^5.0.1",
-    "vue-property-decorator": "^5.1.0",
+    "vue-class-component": "^5.0.2",
+    "vue-property-decorator": "^5.1.1",
     "vuex-class": "^0.2.0"
   },
   "scripts": {
@@ -19,8 +19,8 @@
     "generate": "nuxt generate"
   },
   "devDependencies": {
-    "@types/node": "^7.0.31",
-    "ts-loader": "^2.1.0",
-    "typescript": "^2.3.4"
+    "@types/node": "^8.0.14",
+    "ts-loader": "^2.3.0",
+    "typescript": "^2.4.1"
   }
 }

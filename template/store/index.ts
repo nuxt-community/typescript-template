@@ -1,4 +1,4 @@
-import axios from '~plugins/axios'
+import { getPeople } from "~/api/people"
 
 export const state = () => ({
   selected: 1,
@@ -23,9 +23,7 @@ export const getters = {
 
 export const actions = {
   async nuxtServerInit({ commit }) {
-    const response = await axios.get('/random-data.json')
-    const people = response.data.slice(0, 10)
-    commit('setPeople', people)
+    commit('setPeople', await getPeople(3))
   },
   select({ commit }, id) {
     commit('select', id)
