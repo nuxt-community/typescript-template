@@ -16,7 +16,7 @@
 <script lang="ts">
 import Vue from "vue";
 import Component from "nuxt-class-component"
-import Card from "~components/Card.vue"
+import Card from "~/components/Card.vue"
 import { State, Getter } from "vuex-class"
 
 @Component({
