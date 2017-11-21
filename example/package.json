@@ -1,7 +1,15 @@
 {
   "name": "example",
+  "description": "example",
   "version": "1.0.0",
   "devDependencies": {
     "vue-cli": "^2.9.1"
+  },
+  "license": "UNLICENSED",
+  "main": "n/a",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nuxt-community/typescript-template.git"
   }
 }

@@ -4,8 +4,8 @@ node_js: stable
 before_install:
 - sudo apt-get install expect
 install:
-- cd example && npm install && ./initialize
+- cd example && npm install --no-package-lock && ./initialize
 script:
-- cd example && npm install && npm run build
+- cd test-project && npm install && npm run build
 notifications:
   email: false
