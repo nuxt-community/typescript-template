@@ -2,10 +2,12 @@ language: node_js
 sudo: false
 node_js: stable
 install:
-- npm install vue-cli -g
-- vue init nuxt-community/typescript-template my-project
+- cd example
 - npm install
+- vue init ../ my-project --y
 script:
+- cd example
+- npm install
 - npm run build
 notifications:
   email: false
