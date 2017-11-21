@@ -2,12 +2,8 @@ language: node_js
 sudo: false
 node_js: stable
 install:
-- cd example
-- npm install
-- vue init ../ my-project --y
+- cd example && npm install && ./initialize
 script:
-- cd example
-- npm install
-- npm run build
+- cd example && npm install && npm run build
 notifications:
   email: false
