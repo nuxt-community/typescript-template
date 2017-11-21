@@ -7,3 +7,4 @@ spawn ./node_modules/.bin/vue init ../ test-project
 # https://github.com/vuejs/vue-cli/issues/291
 expect "name" { send "\n" }
 expect "author" { send "\n" }
+expect "vue-cli · Generated" { send "\n" }
