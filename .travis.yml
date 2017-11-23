@@ -1,0 +1,26 @@
+language: node_js
+sudo: true
+node_js: stable
+env:
+  matrix:
+  - version=latest
+  - version=current
+matrix:
+  fast_finish: true
+  allow_failures:
+  - env: version=latest
+before_install:
+- sudo apt-get install expect
+install:
+- cd example
+- npm install --no-package-lock
+- ./initialize
+script:
+- cd test-project
+- npm install
+- 'if [ "$version" == "latest" ]; then
+     npm update;
+  fi'
+- npm run build
+notifications:
+  email: false
