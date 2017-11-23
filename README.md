@@ -4,6 +4,8 @@ A [Nuxt.js](https://github.com/nuxt/nuxt.js) starter project template without th
 
 Live demo: https://nuxt-typescript-starter.johnlindquist.com
 
+[![Travis](https://img.shields.io/travis/nuxt-community/typescript-template/master.svg)](https://travis-ci.org/nuxt-community/typescript-template)
+
 ## Installation
 
 This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
