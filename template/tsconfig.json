@@ -1,10 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "es2015"
-    ],
+    "lib": ["dom", "es2015"],
     "module": "es2015",
     "moduleResolution": "node",
     "experimentalDecorators": true,
@@ -17,16 +14,7 @@
     "allowJs": true,
     "baseUrl": ".",
     "paths": {
-      "~/*" : ["./*"],
-      "~assets/*": ["./assets/*"],
-      "~components/*": ["./components/*"],
-      "~middleware/*": ["./middleware/*"],
-      "~modules/*": ["./modules/*"],
-      "~pages/*": ["./pages/*"],
-      "~plugins/*": ["./plugins/*"],
-      "~static/*": ["./static/*"],
-      "~store": ["./.nuxt/store"],
-      "~router": ["./.nuxt/router"]
+      "~/*": ["./*"]
     }
   }
 }
