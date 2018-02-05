@@ -1,4 +1,4 @@
-import { getPeople } from "~/api/people"
+import { getPeople } from '~/api/people'
 
 export const state = () => ({
   selected: 1,

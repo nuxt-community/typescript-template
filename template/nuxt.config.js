@@ -3,7 +3,7 @@ module.exports = {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000'
   },
   head: {
-    title: 'nuxt-typescript-starter',
+    title: '{{ name }}',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -18,9 +18,9 @@ module.exports = {
   /*
   ** Build configuration
   */
-  css: ['tachyons/css/tachyons.min.css', '~assets/css/main.css'],
+  css: ['tachyons/css/tachyons.min.css', '~/assets/css/main.css'],
   build: {
     vendor: ['axios', 'gsap', 'vuex-class', 'nuxt-class-component']
   },
-  modules: ['~modules/typescript.ts']
+  modules: ['~/modules/typescript.js']
 }
