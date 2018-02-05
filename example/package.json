@@ -3,7 +3,7 @@
   "description": "example",
   "version": "1.0.0",
   "devDependencies": {
-    "vue-cli": "^2.9.1"
+    "vue-cli": "^2.9.3"
   },
   "license": "UNLICENSED",
   "main": "n/a",
