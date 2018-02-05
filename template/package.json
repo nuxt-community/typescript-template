@@ -10,7 +10,9 @@
     "tachyons": "^4.9.1",
     "vue-class-component": "^6.1.2",
     "vue-property-decorator": "^6.0.0",
-    "vuex-class": "^0.3.0"
+    "vuex-class": "^0.3.0",
+    "vue": "^2.5.13",
+    "webpack": "^3.10.0"
   },
   "scripts": {
     "dev": "nuxt",
