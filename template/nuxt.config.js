@@ -42,5 +42,8 @@ module.exports = {
   build: {
     vendor: ['axios', 'gsap', 'vuex-class', 'nuxt-class-component']
   },
+  router: {
+    middleware: 'people'
+  },
   modules: ['~/modules/typescript.js']
 }
