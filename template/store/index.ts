@@ -16,14 +16,14 @@ export const mutations:Mutations = {
 }
 
 export const getters:Getters = {
-  selectedPerson: state => {
+  selectedPerson: (state:IState) => {
     const p = state.people.find((person:IPerson) => person.id === state.selected)
     return p ? p : { first_name: 'Please,', last_name: 'select someone' }
   }
 }
 
 export const actions:Actions = {
-  async getPeople({ commit }) {
+  async setPeople({ commit }) {
     const people = (await axios.get('/random-data.json')).data.slice(0,3);
     commit('setPeople', people);
   },
