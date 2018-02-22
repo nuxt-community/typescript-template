@@ -1,23 +1,19 @@
 <template>
-  <section class="pa4 code">
-    <div class="bg-white-90 pa4">
-      <div class="f1">Nuxt TypeScript Starter</div>
-      <div class="f3">Selected Person: {{selectedPerson.first_name}} {{selectedPerson.last_name}} is #{{selected}}</div>
-      
-    </div>
-    <div class="flex flex-wrap ph2 justify-between bg-white-80">
-      <div :key="person.id" v-for="person in people">
-        <Card :person="person"></Card>
-      </div>
+  <section>
+    <h1 class="header">Nuxt TypeScript Starter</h1>
+    <div class="cards">
+      <Card v-for="person in people" :key="person.id" :person="person"></Card>
     </div>
   </section>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import Component from 'nuxt-class-component'
-import Card from '~/components/Card.vue'
-import { State, Getter } from 'vuex-class'
+import {
+  Component,
+  Vue
+} from "nuxt-property-decorator"
+import { State } from "vuex-class"
+import Card from "~/components/Card.vue"
 
 @Component({
   components: {
@@ -25,8 +21,17 @@ import { State, Getter } from 'vuex-class'
   }
 })
 export default class extends Vue {
-  @State selected
   @State people
-  @Getter selectedPerson
 }
 </script>
+<style scoped>
+.header {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+</style>
