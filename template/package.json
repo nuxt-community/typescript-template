@@ -6,6 +6,7 @@
     "@nuxtjs/axios": "^5.0.0",
     "nuxt": "^1.3.0",
     "nuxt-property-decorator": "^1.0.0",
+    "vue": "^2.5.16",
     "vuex-class": "^0.3.0"
   },
   "scripts": {
