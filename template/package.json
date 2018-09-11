@@ -17,6 +17,6 @@
   "devDependencies": {
     "@types/node": "^9.4.6",
     "ts-loader": "^3.5.0",
-    "typescript": "^2.7.2"
+    "typescript": "^3.0.0"
   }
 }
