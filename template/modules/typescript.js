@@ -6,8 +6,13 @@ export default function() {
     const tsLoader = {
       loader: "ts-loader",
       options: {
-        appendTsSuffixTo: [/\.vue$/]
-      }
+        appendTsSuffixTo: [/\.vue$/],
+        transpileOnly: true
+      },
+      exclude: [
+        /vendor/,
+        /\.nuxt/
+      ]
     }
     // Add TypeScript loader
     config.module.rules.push(
@@ -21,6 +26,7 @@ export default function() {
     // Add TypeScript loader for vue files
     for (let rule of config.module.rules) {
       if (rule.loader === "vue-loader") {
+        rule.options.loaders = rule.options.loaders || {}
         rule.options.loaders.ts = tsLoader
       }
     }
