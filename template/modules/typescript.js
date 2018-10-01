@@ -6,8 +6,7 @@ export default function() {
     const tsLoader = {
       loader: "ts-loader",
       options: {
-        appendTsSuffixTo: [/\.vue$/],
-        transpileOnly: true
+        appendTsSuffixTo: [/\.vue$/]
       },
       exclude: [
         /vendor/,
