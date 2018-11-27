@@ -4014,7 +4014,7 @@ nuxt-typescript@^0.11.0:
     typescript "^2.9.1"
     webpack "3.12.0"
 
-nuxt@^2.0.0:
+nuxt@^2.3.4:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-2.3.4.tgz#61f5fe856ebbeced89f04a3734baa4ee91cc3cfa"
   dependencies:
