@@ -1,4 +1,5 @@
-const parseArgs = require("minimist")
+import parseArgs from "minimist";
+
 const argv = parseArgs(process.argv.slice(2), {
   alias: {
     H: "hostname",
@@ -18,7 +19,8 @@ const host =
   process.env.HOST ||
   process.env.npm_package_config_nuxt_host ||
   "localhost"
-module.exports = {
+
+export default {
   env: {
     baseUrl:
       process.env.BASE_URL ||
