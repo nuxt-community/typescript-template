@@ -1,4 +1,4 @@
-module.exports = function () {
+export default function () {
   // Add .ts & .tsx extension to Nuxt
   this.nuxt.options.extensions.push('ts', 'tsx')
 
