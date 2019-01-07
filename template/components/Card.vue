@@ -4,18 +4,21 @@
     <img :src="'https://robohash.org/' + person.first_name + '_' + person.last_name" />
   </div>
 </template>
+
 <script lang="ts">
 import {
   Component,
   Prop,
   Vue
 } from "nuxt-property-decorator"
+import { Person } from "~/types";
 
 @Component({})
 export default class Card extends Vue {
-  @Prop() person
+  @Prop() person: Person
 }
 </script>
+
 <style scoped>
 .card {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana,
