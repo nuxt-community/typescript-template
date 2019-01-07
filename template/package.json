@@ -3,7 +3,7 @@
   "version": "2.3.4",
   "private": true,
   "dependencies": {
-    "@nuxtjs/axios": "^5.0.0",
+    "@nuxtjs/axios": "5.3.6",
     "nuxt": "2.3.4",
     "nuxt-property-decorator": "^1.2.0",
     "nuxt-typescript": "^0.11.0",
