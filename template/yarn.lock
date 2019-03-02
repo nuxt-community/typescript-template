@@ -771,14 +771,14 @@
     webpack-node-externals "^1.7.2"
     webpackbar "^3.1.3"
 
-"@nuxtjs/axios@5.3.6":
-  version "5.3.6"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/axios/-/axios-5.3.6.tgz#1bad5af6e30977809cddd5248dd3b41271d1dc14"
+"@nuxtjs/axios@5.4.0":
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/axios/-/axios-5.4.0.tgz#4f970f9d62e93472e6d6c6763af5caf5722a4c96"
   dependencies:
-    "@nuxtjs/proxy" "^1.3.0"
+    "@nuxtjs/proxy" "^1.3.3"
     axios "^0.18.0"
-    axios-retry "^3.1.1"
-    consola "^1.4.4"
+    axios-retry "^3.1.2"
+    consola "^2.5.6"
 
 "@nuxtjs/devalue@^1.1.0":
   version "1.1.0"
@@ -794,12 +794,12 @@
     consola "^2.3.0"
     node-fetch "^2.3.0"
 
-"@nuxtjs/proxy@^1.3.0":
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/proxy/-/proxy-1.3.1.tgz#7d76179aff321491f126d6560434579a4dc7a89a"
+"@nuxtjs/proxy@^1.3.3":
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/proxy/-/proxy-1.3.3.tgz#3de3d9f073e8e57167168100940be2a824a220e0"
   dependencies:
-    consola "^1.4.4"
-    http-proxy-middleware "^0.19.0"
+    consola "^2.5.6"
+    http-proxy-middleware "^0.19.1"
 
 "@nuxtjs/youch@^4.2.3":
   version "4.2.3"
@@ -1137,9 +1137,9 @@ autoprefixer@^9.3.1:
     postcss "^7.0.5"
     postcss-value-parser "^3.3.1"
 
-axios-retry@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/axios-retry/-/axios-retry-3.1.1.tgz#88d2971f671a9023b21d887c5dcac6c54f332cde"
+axios-retry@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/axios-retry/-/axios-retry-3.1.2.tgz#4f4dcbefb0b434e22b72bd5e28a027d77b8a3458"
   dependencies:
     is-retry-allowed "^1.1.0"
 
@@ -1505,7 +1505,7 @@ chrome-trace-event@^1.0.0:
   dependencies:
     tslib "^1.9.0"
 
-ci-info@^1.5.0, ci-info@^1.6.0:
+ci-info@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-1.6.0.tgz#2ca20dbb9ceb32d4524a683303313f0304b1e497"
 
@@ -1640,15 +1640,6 @@ connect@^3.6.6:
     parseurl "~1.3.2"
     utils-merge "1.0.1"
 
-consola@^1.4.4:
-  version "1.4.5"
-  resolved "https://registry.yarnpkg.com/consola/-/consola-1.4.5.tgz#09732d07cb50af07332e54e0f42fafb92b962c4a"
-  dependencies:
-    chalk "^2.3.2"
-    figures "^2.0.0"
-    lodash "^4.17.5"
-    std-env "^1.1.0"
-
 consola@^2.0.0-1, consola@^2.0.7, consola@^2.2.4, consola@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/consola/-/consola-2.3.0.tgz#256b80a927234351d512a4e5693eac9cf8a572b9"
@@ -1658,6 +1649,10 @@ consola@^2.0.0-1, consola@^2.0.7, consola@^2.2.4, consola@^2.3.0:
     figures "^2.0.0"
     std-env "^2.2.1"
     string-width "^2.1.1"
+
+consola@^2.5.6:
+  version "2.5.6"
+  resolved "https://registry.yarnpkg.com/consola/-/consola-2.5.6.tgz#5ce14dbaf6f5b589c8a258ef80ed97b752fa57d5"
 
 console-browserify@^1.1.0:
   version "1.1.0"
@@ -2765,7 +2760,7 @@ http-errors@1.6.3, http-errors@~1.6.2, http-errors@~1.6.3:
     setprototypeof "1.1.0"
     statuses ">= 1.4.0 < 2"
 
-http-proxy-middleware@^0.19.0:
+http-proxy-middleware@^0.19.1:
   version "0.19.1"
   resolved "https://registry.yarnpkg.com/http-proxy-middleware/-/http-proxy-middleware-0.19.1.tgz#183c7dc4aa1479150306498c210cdaf96080a43a"
   dependencies:
@@ -2923,12 +2918,6 @@ is-buffer@^1.1.5:
 is-callable@^1.1.3, is-callable@^1.1.4:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/is-callable/-/is-callable-1.1.4.tgz#1e1adf219e1eeb684d691f9d6a05ff0d30a24d75"
-
-is-ci@^1.1.0:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/is-ci/-/is-ci-1.2.1.tgz#e3779c8ee17fccf428488f6e281187f2e632841c"
-  dependencies:
-    ci-info "^1.5.0"
 
 is-color-stop@^1.0.0:
   version "1.1.0"
@@ -5034,12 +5023,6 @@ statuses@~1.3.1:
 statuses@~1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-1.4.0.tgz#bb73d446da2796106efcc1b601a253d6c46bd087"
-
-std-env@^1.1.0:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/std-env/-/std-env-1.3.1.tgz#4e1758412439e9ece1d437b1b098551911aa44ee"
-  dependencies:
-    is-ci "^1.1.0"
 
 std-env@^2.2.1:
   version "2.2.1"
