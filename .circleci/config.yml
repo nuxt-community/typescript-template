@@ -1,0 +1,52 @@
+version: 2
+
+container: &container
+  docker:
+    - image: circleci/node:10.15
+
+jobs:
+  run-vue-cli:
+    <<: *container
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      - run: sudo apt-get install expect
+
+      - restore_cache:
+          keys:
+          - vue-cli-{{ checksum "template/package.json" }}
+          - vue-cli-
+
+      - run: npm install vue-cli
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: vue-cli-{{ checksum "template/package.json" }}
+
+      - run: expect .circleci/run-vue-init.exp
+
+      - restore_cache:
+          keys:
+          - project-{{ checksum "nuxt-ts-project/package.json" }}
+          - project-
+
+      - run: cd nuxt-ts-project && npm install
+
+      - save_cache:
+          paths:
+            - nuxt-ts-project/node_modules
+          key: project-{{ checksum "nuxt-ts-project/package.json" }}
+
+      - run: cd nuxt-ts-project && npm run build
+
+      - run: cd nuxt-ts-project && npm run generate
+
+workflows:
+  version: 2
+  commit:
+    jobs:
+      - run-vue-cli
