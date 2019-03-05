@@ -3612,12 +3612,14 @@ number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
 
-nuxt-property-decorator@1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/nuxt-property-decorator/-/nuxt-property-decorator-1.3.1.tgz#92518359296b3b58e75869e44fac4cfe21e5a713"
+nuxt-property-decorator@2.1.3:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/nuxt-property-decorator/-/nuxt-property-decorator-2.1.3.tgz#75bad485f59013228db7240d4ea8e79990e4fc3e"
   dependencies:
     reflect-metadata "^0.1.12"
-    vue-class-component "6.3.2"
+    vue-class-component "7.0.1"
+    vue-property-decorator "^7.3.0"
+    vuex "^3.1.0"
     vuex-class "^0.3.1"
 
 nuxt@2.3.4:
@@ -5484,7 +5486,11 @@ vm-browserify@0.0.4:
   dependencies:
     indexof "0.0.1"
 
-vue-class-component@6.3.2:
+vue-class-component@7.0.1:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/vue-class-component/-/vue-class-component-7.0.1.tgz#7af2225c600667c7042b60712eefdf41dfc6de63"
+
+vue-class-component@^6.2.0:
   version "6.3.2"
   resolved "https://registry.yarnpkg.com/vue-class-component/-/vue-class-component-6.3.2.tgz#e6037e84d1df2af3bde4f455e50ca1b9eec02be6"
 
@@ -5513,6 +5519,12 @@ vue-meta@^1.5.6:
 vue-no-ssr@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/vue-no-ssr/-/vue-no-ssr-1.1.0.tgz#b323807112f676324d9d7cfde85d7831ced11dd9"
+
+vue-property-decorator@^7.3.0:
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/vue-property-decorator/-/vue-property-decorator-7.3.0.tgz#d50d67f0b0f1c814f9f2fba36d6eeccbcc62dbb6"
+  dependencies:
+    vue-class-component "^6.2.0"
 
 vue-router@^3.0.2:
   version "3.0.2"
@@ -5560,6 +5572,10 @@ vuex-class@0.3.1, vuex-class@^0.3.1:
 vuex@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/vuex/-/vuex-3.0.1.tgz#e761352ebe0af537d4bb755a9b9dc4be3df7efd2"
+
+vuex@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/vuex/-/vuex-3.1.0.tgz#634b81515cf0cfe976bd1ffe9601755e51f843b9"
 
 watchpack@^1.5.0:
   version "1.6.0"
