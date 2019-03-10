@@ -5,6 +5,7 @@
     "noImplicitAny": false,
     "strict": false,
     "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
     "baseUrl": ".",
     "types": [
       "@nuxt/vue-app",
