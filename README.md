@@ -2,8 +2,6 @@
 
 A [Nuxt.js](https://github.com/nuxt/nuxt.js) starter project template without the distraction of a complicated development environment.
 
-Live demo: https://nuxt-typescript-starter.johnlindquist.com
-
 ## Installation
 
 This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
@@ -22,7 +20,6 @@ $ npm install # Or yarn install
 ### Development
 
 ``` bash
-# serve with hot reloading at localhost:3000
 $ npm run dev
 ```
 
@@ -36,9 +33,10 @@ $ npm run build
 $ npm start
 ```
 
-### Generate
+### Static Generation
+
+Sample Deployment: [![Netlify Status](https://api.netlify.com/api/v1/badges/e5bf3478-1cb8-44c4-8aeb-040083bd39ca/deploy-status)](https://app.netlify.com/sites/nuxt-ts-template/deploys)
 
 ``` bash
-# generate a static project
-$ npm run generate
+$ npm run generate #=> Then distribute /dist
 ```

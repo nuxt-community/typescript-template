@@ -45,8 +45,33 @@ jobs:
 
       - run: cd nuxt-ts-project && npm run generate
 
+      - persist_to_workspace:
+          root: ~/
+          paths:
+            - repo/nuxt-ts-project/dist
+
+  deploy-static:
+    <<: *container
+
+    working_directory: ~/repo
+
+    steps:
+      - attach_workspace:
+          at: ~/
+
+      - run: npm install netlify-cli
+
+      - run: node_modules/.bin/netlify deploy -p -d nuxt-ts-project/dist/
+
 workflows:
   version: 2
   commit:
     jobs:
       - run-vue-cli
+      - deploy-static:
+          requires:
+            - run-vue-cli
+          filters:
+            branches:
+              only:
+                - master
