@@ -20,7 +20,7 @@ jobs:
           - vue-cli-{{ checksum "template/package.json" }}
           - vue-cli-
 
-      - run: npm install vue-cli netlify-cli
+      - run: npm install vue-cli
 
       - save_cache:
           paths:
@@ -45,6 +45,22 @@ jobs:
 
       - run: cd nuxt-ts-project && npm run generate
 
+      - persist_to_workspace:
+          root: ~/
+          paths:
+            - repo/nuxt-ts-project/dist
+
+  deploy-static:
+    <<: *container
+
+    working_directory: ~/repo
+
+    steps:
+      - attach_workspace:
+          at: ~/
+
+      - run: npm install netlify-cli
+
       - run: node_modules/.bin/netlify deploy -p -d nuxt-ts-project/dist/
 
 workflows:
@@ -52,3 +68,11 @@ workflows:
   commit:
     jobs:
       - run-vue-cli
+      - deploy-static:
+          requires:
+            - run-vue-cli
+          filters:
+            branches:
+              only:
+                - master
+                - setup-netlify-for-static-build
