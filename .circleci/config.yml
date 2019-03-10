@@ -75,4 +75,3 @@ workflows:
             branches:
               only:
                 - master
-                - setup-netlify-for-static-build
