@@ -13,8 +13,6 @@ $ cd my-project
 $ npm install # Or yarn install
 ```
 
-> Make sure to use a version of vue-cli >= 2.1 (`vue -V`).
-
 ## Usage
 
 ### Development
@@ -35,8 +33,8 @@ $ npm start
 
 ### Static Generation
 
-Sample Deployment: [![Netlify Status](https://api.netlify.com/api/v1/badges/e5bf3478-1cb8-44c4-8aeb-040083bd39ca/deploy-status)](https://app.netlify.com/sites/nuxt-ts-template/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e5bf3478-1cb8-44c4-8aeb-040083bd39ca/deploy-status)](https://nuxt-ts-template.netlify.com/)
 
-``` bash
+```bash
 $ npm run generate #=> Then distribute /dist
 ```
