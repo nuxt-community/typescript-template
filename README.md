@@ -1,5 +1,7 @@
 # Nuxt TypeScript Starter
 
+[![CircleCI](https://circleci.com/gh/nuxt-community/typescript-template/tree/master.svg?style=svg)](https://circleci.com/gh/nuxt-community/typescript-template/tree/master)
+
 A [Nuxt.js](https://github.com/nuxt/nuxt.js) starter project template without the distraction of a complicated development environment.
 
 ## Installation
