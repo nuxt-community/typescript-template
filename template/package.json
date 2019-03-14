@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@nuxt/vue-app": "2.4.5",
-    "@types/node": "10.12.30",
+    "@types/node": "10.14.1",
     "@types/webpack-env": "1.13.9"
   }
 }
