@@ -1,22 +1,23 @@
 {
   "name": "{{ name }}",
   "description": "{{ description }}",
-  "version": "2.4.5",
+  "version": "2.6.1",
   "private": true,
   "dependencies": {
     "@nuxtjs/axios": "5.4.1",
-    "nuxt-ts": "2.4.5",
+    "nuxt": "2.6.1",
     "nuxt-property-decorator": "2.1.3",
+    "ts-node": "8.0.3",
     "vuex-class": "0.3.2"
   },
   "scripts": {
-    "dev": "nuxt-ts",
-    "build": "nuxt-ts build",
-    "start": "nuxt-ts start",
-    "generate": "nuxt-ts generate"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
   },
   "devDependencies": {
-    "@nuxt/vue-app": "2.4.5",
+    "@nuxt/typescript": "2.6.1",
     "@types/node": "10.14.4",
     "@types/webpack-env": "1.13.9"
   }
