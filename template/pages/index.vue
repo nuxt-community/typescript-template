@@ -26,7 +26,7 @@ import Card from "~/components/Card.vue"
   }
 })
 export default class extends Vue {
-  @State people: Person
+  @State people!: Person
 }
 </script>
 
