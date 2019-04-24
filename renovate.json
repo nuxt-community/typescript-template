@@ -4,7 +4,7 @@
   ],
   "packageRules": [
     {
-      "packageNames": ["nuxt-ts", "@nuxt/vue-app"],
+      "packageNames": ["nuxt", "@nuxt/typescript"],
       "groupName": "nuxt-ts monorepo"
     }
   ]
