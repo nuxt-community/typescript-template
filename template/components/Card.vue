@@ -15,7 +15,7 @@ import { Person } from "~/types";
 
 @Component({})
 export default class Card extends Vue {
-  @Prop() person: Person
+  @Prop() person!: Person
 }
 </script>
 
