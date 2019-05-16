@@ -31,14 +31,14 @@ jobs:
 
       - restore_cache:
           keys:
-          - project-{{ checksum "nuxt-ts-project/package.json" }}
+          - project-{{ checksum "nuxt-ts-project/package.json" }}-v1
 
       - run: cd nuxt-ts-project && npm install
 
       - save_cache:
           paths:
             - nuxt-ts-project/node_modules
-          key: project-{{ checksum "nuxt-ts-project/package.json" }}
+          key: project-{{ checksum "nuxt-ts-project/package.json" }}-v1
 
       - run: cd nuxt-ts-project && npm run build
 
