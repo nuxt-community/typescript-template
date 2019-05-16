@@ -32,7 +32,6 @@ jobs:
       - restore_cache:
           keys:
           - project-{{ checksum "nuxt-ts-project/package.json" }}
-          - project-
 
       - run: cd nuxt-ts-project && npm install
 
