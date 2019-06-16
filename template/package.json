@@ -7,7 +7,7 @@
     "@nuxtjs/axios": "5.5.4",
     "nuxt": "2.8.1",
     "nuxt-property-decorator": "2.3.0",
-    "ts-node": "8.2.0",
+    "ts-node": "8.3.0",
     "vuex-class": "0.3.2"
   },
   "scripts": {
