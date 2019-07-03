@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@nuxt/typescript": "2.8.1",
-    "@types/node": "10.14.11",
+    "@types/node": "10.14.12",
     "@types/webpack-env": "1.13.9"
   }
 }
