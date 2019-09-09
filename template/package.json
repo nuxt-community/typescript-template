@@ -17,7 +17,6 @@
     "generate": "nuxt-ts generate"
   },
   "devDependencies": {
-    "@nuxt/typescript-build": "0.2.6",
-    "@types/webpack-env": "1.14.0"
+    "@nuxt/typescript-build": "0.2.6"
   }
 }
