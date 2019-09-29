@@ -17,6 +17,6 @@
     "generate": "nuxt-ts generate"
   },
   "devDependencies": {
-    "@nuxt/typescript-build": "0.2.9"
+    "@nuxt/typescript-build": "0.2.10"
   }
 }
