@@ -1,7 +1,7 @@
 {
   "name": "{{ name }}",
   "description": "{{ description }}",
-  "version": "2.10.0",
+  "version": "2.10.1",
   "private": true,
   "dependencies": {
     "@nuxtjs/axios": "5.6.0",
