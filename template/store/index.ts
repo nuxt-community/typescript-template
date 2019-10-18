@@ -1,5 +1,6 @@
+import { MutationTree, ActionTree, ActionContext } from "vuex";
+import { Context as AppContext } from "@nuxt/types";
 import { RootState, Person } from "~/types";
-import { MutationTree, ActionTree } from "vuex";
 import localRandomData from "~/static/random-data.json";
 
 export const state = (): RootState => ({
@@ -12,7 +13,11 @@ export const mutations: MutationTree<RootState> = {
   }
 }
 
-export const actions: ActionTree<RootState, RootState> = {
+interface Actions<S, R> extends ActionTree<S, R> {
+  nuxtServerInit (actionContext: ActionContext<S, R>, appContext: AppContext): void
+}
+
+export const actions: Actions<RootState, RootState> = {
   async nuxtServerInit({ commit }, context) {
     let people: Person[] = []
 
