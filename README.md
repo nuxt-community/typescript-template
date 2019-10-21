@@ -6,7 +6,12 @@ A [Nuxt.js](https://github.com/nuxt/nuxt.js) starter project template without th
 
 ## Installation
 
-This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
+This is a project template for legacy [vue-cli](https://cli.vuejs.org/guide/creating-a-project.html#pulling-2-x-templates-legacy).
+
+```bash
+$ npm install -g @vue/cli
+$ npm install -g @vue/cli-init
+```
 
 ``` bash
 $ vue init nuxt-community/typescript-template my-project
