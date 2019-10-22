@@ -1,12 +1,12 @@
 {
   "name": "{{ name }}",
   "description": "{{ description }}",
-  "version": "2.10.1",
+  "version": "2.10.2",
   "private": true,
   "dependencies": {
     "@nuxtjs/axios": "5.6.0",
     "@nuxt/typescript-runtime": "0.2.2",
-    "nuxt": "2.10.1",
+    "nuxt": "2.10.2",
     "nuxt-property-decorator": "2.5.0",
     "vuex-class": "0.3.2"
   },
