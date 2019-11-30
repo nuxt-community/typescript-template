@@ -4,8 +4,8 @@
   ],
   "packageRules": [
     {
-      "packageNames": ["nuxt", "@nuxt/typescript"],
-      "groupName": "nuxt-ts monorepo"
+      "packageNames": ["nuxt", "@nuxt/typescript-build", "@nuxt/typescript-runtime"],
+      "groupName": "Nuxt TypeScript monorepo"
     }
   ]
 }
