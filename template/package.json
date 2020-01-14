@@ -4,7 +4,7 @@
   "version": "2.11.0",
   "private": true,
   "dependencies": {
-    "@nuxtjs/axios": "5.9.2",
+    "@nuxtjs/axios": "5.9.3",
     "@nuxt/typescript-runtime": "0.3.7",
     "nuxt": "2.11.0",
     "nuxt-property-decorator": "2.5.0",
