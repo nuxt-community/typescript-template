@@ -5,7 +5,7 @@
   "private": true,
   "dependencies": {
     "@nuxtjs/axios": "5.9.2",
-    "@nuxt/typescript-runtime": "0.3.6",
+    "@nuxt/typescript-runtime": "0.3.7",
     "nuxt": "2.11.0",
     "nuxt-property-decorator": "2.5.0",
     "vuex-class": "0.3.2"
@@ -17,6 +17,6 @@
     "generate": "nuxt-ts generate"
   },
   "devDependencies": {
-    "@nuxt/typescript-build": "0.5.5"
+    "@nuxt/typescript-build": "0.5.6"
   }
 }
