@@ -2,7 +2,7 @@ version: 2
 
 container: &container
   docker:
-    - image: circleci/node:10.20
+    - image: circleci/node:10.21
 
 jobs:
   run-vue-cli:
