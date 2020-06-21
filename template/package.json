@@ -14,7 +14,7 @@
     "dev": "nuxt-ts",
     "build": "nuxt-ts build",
     "start": "nuxt-ts start",
-    "generate": "nuxt-ts generate"
+    "generate": "nuxt-ts build && nuxt-ts export"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "1.0.3"
