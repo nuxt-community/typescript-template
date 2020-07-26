@@ -18,6 +18,6 @@
   },
   "devDependencies": {
     "@nuxt/types": "2.13.3",
-    "@nuxt/typescript-build": "2.0.0"
+    "@nuxt/typescript-build": "2.0.2"
   }
 }
