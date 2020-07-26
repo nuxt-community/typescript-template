@@ -1,4 +1,6 @@
-export default {
+import type { NuxtConfig } from '@nuxt/types'
+
+const config: NuxtConfig = {
   build: {},
   buildModules: ["@nuxt/typescript-build"],
   css: [],
@@ -15,3 +17,5 @@ export default {
   loading: { color: "#0c64c1" },
   modules: []
 }
+
+export default config
