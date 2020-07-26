@@ -14,10 +14,13 @@
     "dev": "nuxt-ts",
     "build": "nuxt-ts build",
     "start": "nuxt-ts start",
-    "generate": "nuxt-ts build --target static && nuxt-ts export"
+    "generate": "nuxt-ts build --target static && nuxt-ts export",
+    "lint": "eslint --max-warnings 0 --ext .ts,.vue ."
   },
   "devDependencies": {
     "@nuxt/types": "2.13.3",
-    "@nuxt/typescript-build": "2.0.2"
+    "@nuxt/typescript-build": "2.0.2",
+    "@nuxtjs/eslint-config-typescript": "3.0.0",
+    "eslint": "7.5.0"
   }
 }
