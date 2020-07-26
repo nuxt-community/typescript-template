@@ -1,10 +1,9 @@
 {
-  "name": "{{ name }}",
-  "description": "{{ description }}",
+  "name": "nuxt-community-typescript-template",
+  "description": "A boilerplate to start a Nuxt+TS project quickly",
   "version": "2.13.3",
   "private": true,
   "dependencies": {
-    "@nuxtjs/axios": "5.12.0",
     "@nuxt/typescript-runtime": "1.0.0",
     "nuxt": "2.13.3",
     "nuxt-property-decorator": "2.7.2",
