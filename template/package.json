@@ -17,7 +17,7 @@
     "generate": "nuxt-ts build --target static && nuxt-ts export"
   },
   "devDependencies": {
-    "@nuxt/types": "2.13.3",
+    "@nuxt/types": "2.14.1",
     "@nuxt/typescript-build": "2.0.2"
   }
 }
