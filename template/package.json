@@ -6,7 +6,7 @@
   "dependencies": {
     "@nuxtjs/axios": "5.12.1",
     "@nuxt/typescript-runtime": "1.0.0",
-    "nuxt": "2.14.1",
+    "nuxt": "2.14.3",
     "nuxt-property-decorator": "2.7.2",
     "vuex-class": "0.3.2"
   },
