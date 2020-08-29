@@ -1,21 +1,16 @@
 <template>
-  <ul>
-    <li>
-      <nuxt-link to="/options-api">
-        With Options API
-      </nuxt-link>
-    </li>
-    <li>
-      <nuxt-link to="/class-api">
-        With Class API
-      </nuxt-link>
-    </li>
-    <li>
-      <nuxt-link to="/composition-api">
-        With Composition API <small>*Experimental</small>
-      </nuxt-link>
-    </li>
-  </ul>
+  <main>
+    <ul>
+      <li
+        v-for="page in ['Options API', 'Class API', 'Composition API']"
+        :key="page"
+      >
+        <nuxt-link :to="`/${page.toLowerCase().split(' ').join('-')}`">
+          With {{ page }}
+        </nuxt-link>
+      </li>
+    </ul>
+  </main>
 </template>
 
 <script lang="ts">
