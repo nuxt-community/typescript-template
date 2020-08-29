@@ -44,9 +44,9 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator'
+import { Component, Vue, namespace, State } from 'nuxt-property-decorator'
 import type { RootState } from '~/store'
-import { NamespacedActionType, SettingState } from '~/store/setting'
+import { namespace as settingStoreNamespace, SettingState, actionType } from '~/store/setting'
 
 interface ToDo {
   userId: number
@@ -54,6 +54,8 @@ interface ToDo {
   title: string
   completed: boolean
 }
+
+const SettingStore = namespace(settingStoreNamespace)
 
 @Component({
   fetchOnServer: false,
@@ -76,6 +78,10 @@ interface ToDo {
   }
 })
 export default class ClassApi extends Vue {
+  @State('description') descriptionOnStore!: RootState['description']
+  @SettingStore.Action(actionType.TOGGLE_DARK_MODE) toggleDarkMode!: () => void
+  @SettingStore.State('darkMode') isDarkMode!: SettingState['darkMode']
+
   message = "I'm defined on data()"
   fetchedTodos: ToDo[] = []
   asyncMessage = 'I will be overwritten by asyncData'
@@ -83,18 +89,6 @@ export default class ClassApi extends Vue {
 
   get computedMessage (): string {
     return this.message.replace('data()', 'computed()')
-  }
-
-  get descriptionOnStore (): string {
-    return (this.$store.state as RootState).description
-  }
-
-  get isDarkMode (): boolean {
-    return (this.$store.state.setting as SettingState).darkMode
-  }
-
-  toggleDarkMode (): void {
-    this.$store.dispatch(NamespacedActionType.TOGGLE_DARK_MODE)
   }
 }
 </script>

@@ -45,9 +45,10 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { mapActions, mapState } from 'vuex'
 
 import type { RootState } from '~/store'
-import { SettingState, NamespacedActionType } from '~/store/setting'
+import { actionType, namespace as settingStoreNamespace, SettingState } from '~/store/setting'
 
 interface ToDo {
   userId: number
@@ -87,19 +88,19 @@ export default Vue.extend({
       return this.message.replace('data()', 'computed()')
     },
 
-    descriptionOnStore (): string {
-      return (this.$store.state as RootState).description
-    },
+    ...mapState({
+      descriptionOnStore: state => (state as RootState).description
+    }),
 
-    isDarkMode (): boolean {
-      return (this.$store.state.setting as SettingState).darkMode
-    }
+    ...mapState(settingStoreNamespace, {
+      isDarkMode: state => (state as SettingState).darkMode
+    })
   },
 
   methods: {
-    toggleDarkMode (): void {
-      this.$store.dispatch(NamespacedActionType.TOGGLE_DARK_MODE)
-    }
+    ...mapActions(settingStoreNamespace, {
+      toggleDarkMode: actionType.TOGGLE_DARK_MODE
+    })
   },
 
   head () {

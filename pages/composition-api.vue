@@ -46,7 +46,7 @@
 <script lang="ts">
 import { computed, defineComponent, ref, useAsync, useContext, useFetch, useMeta } from '@nuxtjs/composition-api'
 import type { RootState } from '~/store'
-import { NamespacedActionType, SettingState } from '~/store/setting'
+import { namespace as settingStoreNamespace, SettingState, actionType } from '~/store/setting'
 
 interface ToDo {
   userId: number
@@ -69,7 +69,7 @@ export default defineComponent({
     const isDarkMode = computed(() => (context.root.$store.state.setting as SettingState).darkMode)
 
     const toggleDarkMode = (): void => {
-      context.root.$store.dispatch(NamespacedActionType.TOGGLE_DARK_MODE)
+      context.root.$store.dispatch(`${settingStoreNamespace}/${actionType.TOGGLE_DARK_MODE}`)
     }
 
     const asyncMessage = useAsync(() => "I'm defined on asyncData()")
