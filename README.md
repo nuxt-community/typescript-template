@@ -4,17 +4,17 @@ A [Nuxt.js](https://github.com/nuxt/nuxt.js) starter project template without th
 
 ## Setup
 
-Create your repository from "Use this template" button from [this template](https://github.com/nuxt-community/typescript-template).
+Create your repository from "Use this template" button from [this template](https://github.com/nuxt-community/typescript-template) and clone into your local.
 
-Then, run below commands in your cloned local.
+Then, run below command.
 
 ```
-npm i # or yarn
+./init.sh
 ```
 
 ## Usage
 
-### Development
+### Run Development server
 
 ```sh
 npm run dev
@@ -22,7 +22,7 @@ npm run dev
 
 Go to [http://localhost:3000](http://localhost:3000)
 
-### Production
+### Build/Run SSR enabled application
 
 ```sh
 npm run build
@@ -36,3 +36,7 @@ npm start
 ```sh
 npm run generate #=> Then distribute /dist
 ```
+
+# Miss the old way of this repository?
+
+That still alives on [master](https://github.com/nuxt-community/typescript-template/tree/main) branch.
