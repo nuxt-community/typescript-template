@@ -1,7 +1,5 @@
 # Nuxt TypeScript Starter
 
-[![CircleCI](https://circleci.com/gh/nuxt-community/typescript-template/tree/master.svg?style=svg)](https://circleci.com/gh/nuxt-community/typescript-template/tree/master)
-
 A [Nuxt.js](https://github.com/nuxt/nuxt.js) starter project template without the distraction of a complicated development environment.
 
 ## Installation
@@ -14,7 +12,7 @@ $ npm install -g @vue/cli-init
 ```
 
 ``` bash
-$ vue init nuxt-community/typescript-template my-project
+$ vue init "nuxt-community/typescript-template#master" my-project
 $ cd my-project
 # install dependencies
 $ npm install # Or yarn install
@@ -39,8 +37,6 @@ $ npm start
 ```
 
 ### Static Generation
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e5bf3478-1cb8-44c4-8aeb-040083bd39ca/deploy-status)](https://nuxt-ts-template.netlify.com/)
 
 ```bash
 $ npm run generate #=> Then distribute /dist
