@@ -13,7 +13,7 @@
     "dev": "nuxt-ts",
     "build": "nuxt-ts build",
     "start": "nuxt-ts start",
-    "generate": "nuxt-ts build --target static && nuxt-ts export",
+    "generate": "nuxt-ts generate",
     "lint": "eslint --max-warnings 0 --ext .ts,.vue ."
   },
   "devDependencies": {
