@@ -65,7 +65,7 @@ export default defineComponent({
     const computedMessage = computed(() => message.replace('data()', 'computed()'))
     const isDarkMode = computed(() => (context.root.$store.state.setting as SettingState).darkMode)
 
-    const toggleDarkMode = () => {
+    const toggleDarkMode = (): void => {
       context.root.$store.dispatch(NamespacedActionType.TOGGLE_DARK_MODE)
     }
 

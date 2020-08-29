@@ -97,7 +97,7 @@ export default Vue.extend({
   },
 
   methods: {
-    toggleDarkMode () {
+    toggleDarkMode (): void {
       this.$store.dispatch(NamespacedActionType.TOGGLE_DARK_MODE)
     }
   },
