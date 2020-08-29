@@ -7,7 +7,7 @@ declare module '@nuxt/types' {
 }
 
 const userAgentMiddleware: Middleware = (context: Context) => {
-  context.userAgent = process.server ? (context.req.headers['user-agent'] ?? 'Unknown') : navigator.userAgent
+  context.userAgent = process.server ? (context.req?.headers['user-agent'] ?? 'Unknown') : navigator.userAgent
 }
 
 export default userAgentMiddleware
