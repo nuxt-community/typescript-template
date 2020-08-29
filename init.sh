@@ -2,7 +2,6 @@ delete_composition()
 {
   sed -i.bak '/@nuxtjs\/composition-api/d' package.json
   sed -i.bak '/@nuxtjs\/composition-api/d' nuxt.config.ts
-  sed -i.bak '/plugins\/composition-api/d' nuxt.config.ts
   sed -i.bak "s/'Composition API'//" pages/index.vue
 }
 

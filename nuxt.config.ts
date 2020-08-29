@@ -20,7 +20,6 @@ const config: NuxtConfig = {
   loading: { color: '#0c64c1' },
   modules: [],
   plugins: [
-    '~/plugins/composition-api',
     '~/plugins/truncate'
   ]
 }
