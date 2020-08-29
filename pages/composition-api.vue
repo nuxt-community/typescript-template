@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1>With Composition API *Experimental</h1>
+    <h1>With Composition API <small>*Experimental</small></h1>
     <h2>data ()</h2>
     <p>
       {{ message }}
@@ -14,7 +14,7 @@
       {{ asyncMessage }}
     </p>
     <h2>fetch ()</h2>
-    <p v-if="$fetchState.pending">
+    <p v-if="fetchState.pending || !fetchState.timestamp">
       Fetching from frontend...
     </p>
     <ul v-else>
@@ -39,12 +39,12 @@
     <h2>Nuxt Middleware</h2>
     <p>{{ userAgent }}</p>
     <h2>Nuxt Plugin</h2>
-    <p>{{ $truncate(userAgent) }}</p>
+    <p>{{ $truncate(userAgent || '') }}</p>
   </main>
 </template>
 
 <script lang="ts">
-import { computed, defineComponent, ref } from '@vue/composition-api'
+import { computed, defineComponent, ref, useAsync, useContext, useFetch, useMeta } from '@nuxtjs/composition-api'
 import type { RootState } from '~/store'
 import { NamespacedActionType, SettingState } from '~/store/setting'
 
@@ -58,43 +58,41 @@ interface ToDo {
 export default defineComponent({
   fetchOnServer: false,
   middleware: 'user-agent',
+  head: {},
 
   setup (_props, context) {
-    const message = "I'm defined on data()"
+    const message = ref("I'm defined on data()")
+    const fetchedTodos = ref<ToDo[]>([])
+
     const descriptionOnStore = computed(() => (context.root.$store.state as RootState).description)
-    const computedMessage = computed(() => message.replace('data()', 'computed()'))
+    const computedMessage = computed(() => message.value.replace('data()', 'computed()'))
     const isDarkMode = computed(() => (context.root.$store.state.setting as SettingState).darkMode)
 
     const toggleDarkMode = (): void => {
       context.root.$store.dispatch(NamespacedActionType.TOGGLE_DARK_MODE)
     }
 
+    const asyncMessage = useAsync(() => "I'm defined on asyncData()")
+    const userAgent = useAsync(() => useContext().userAgent)
+
+    const { fetchState } = useFetch(() => {
+      return window.fetch('https://jsonplaceholder.typicode.com/todos')
+        .then(response => response.json())
+        .then((data: ToDo[]) => { fetchedTodos.value = data })
+    })
+
+    useMeta({ title: 'Composition API Demo' })
+
     return {
       message,
-      fetchedTodos: ref<ToDo[]>([]),
+      asyncMessage,
+      userAgent,
+      fetchState,
+      fetchedTodos,
       toggleDarkMode,
       descriptionOnStore,
       computedMessage,
       isDarkMode
-    }
-  },
-
-  fetch () {
-    return fetch('https://jsonplaceholder.typicode.com/todos')
-      .then(response => response.json())
-      .then((data: ToDo[]) => { this.fetchedTodos = data })
-  },
-
-  asyncData (context) {
-    return {
-      asyncMessage: "I'm defined on asyncData()",
-      userAgent: context.userAgent
-    }
-  },
-
-  head () {
-    return {
-      title: 'Composition API Demo'
     }
   }
 })

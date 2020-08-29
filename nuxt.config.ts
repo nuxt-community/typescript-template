@@ -2,7 +2,10 @@ import type { NuxtConfig } from '@nuxt/types'
 
 const config: NuxtConfig = {
   build: {},
-  buildModules: ['@nuxt/typescript-build'],
+  buildModules: [
+    '@nuxtjs/composition-api',
+    '@nuxt/typescript-build'
+  ],
   css: [],
   env: {},
   head: {
