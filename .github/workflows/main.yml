@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        api: [options, class, composition]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run initializing script
+        run: COMPONENT_API=${{ matrix.api }} ./init.sh
+
+      - run: npm install
+
+      - name: Run lint
+        run: npm run lint
+
+      - name: Run static site generation
+        run: npm run generate
