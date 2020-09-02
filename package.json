@@ -4,7 +4,7 @@
   "version": "2.14.4",
   "private": true,
   "dependencies": {
-    "@nuxt/typescript-runtime": "1.0.0",
+    "@nuxt/typescript-runtime": "2.0.0",
     "@nuxtjs/composition-api": "0.12.3",
     "nuxt-property-decorator": "2.7.2",
     "nuxt": "2.14.4"
