@@ -16,7 +16,7 @@ The command will ask your preference for the API to write Vue component among:
 
 - Options API
 - Class API with with nuxt-property-decorator
-- Composition API (Experimental) with  @nuxt/composition-api
+- Composition API (Experimental) with [@nuxt/composition-api](https://github.com/nuxt-community/composition-api)
 
 ## Usage
 
