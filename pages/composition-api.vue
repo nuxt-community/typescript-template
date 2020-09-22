@@ -45,6 +45,7 @@
 
 <script lang="ts">
 import { computed, defineComponent, ref, useAsync, useContext, useFetch, useMeta } from '@nuxtjs/composition-api'
+
 import type { RootState } from '~/store'
 import { namespace as settingStoreNamespace, SettingState, actionType } from '~/store/setting'
 
@@ -81,7 +82,13 @@ export default defineComponent({
         .then((data: ToDo[]) => { fetchedTodos.value = data })
     })
 
-    useMeta({ title: 'Composition API Demo' })
+    useMeta({
+      title: 'Composition API Demo',
+      meta: [{
+        name: 'message',
+        content: message.value // It's not reactive
+      }]
+    })
 
     return {
       message,
