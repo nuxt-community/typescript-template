@@ -45,6 +45,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { MetaInfo } from 'vue-meta'
 import { mapActions, mapState } from 'vuex'
 
 import type { RootState } from '~/store'
@@ -103,9 +104,13 @@ export default Vue.extend({
     })
   },
 
-  head () {
+  head (): MetaInfo {
     return {
-      title: 'Options API Demo'
+      title: 'Options API Demo',
+      meta: [{
+        name: 'message',
+        content: this.computedMessage
+      }]
     }
   }
 })

@@ -45,6 +45,8 @@
 
 <script lang="ts">
 import { Component, Vue, namespace, State } from 'nuxt-property-decorator'
+import { MetaInfo } from 'vue-meta'
+
 import type { RootState } from '~/store'
 import { namespace as settingStoreNamespace, SettingState, actionType } from '~/store/setting'
 
@@ -71,9 +73,13 @@ const SettingStore = namespace(settingStoreNamespace)
       .then(response => response.json())
       .then((data: ToDo[]) => { this.fetchedTodos = data })
   },
-  head () {
+  head (this: ClassApi): MetaInfo {
     return {
-      title: 'Composition API Demo'
+      title: 'Class API Demo',
+      meta: [{
+        name: 'message',
+        content: this.computedMessage
+      }]
     }
   }
 })
