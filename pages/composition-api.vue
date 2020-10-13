@@ -82,13 +82,13 @@ export default defineComponent({
         .then((data: ToDo[]) => { fetchedTodos.value = data })
     })
 
-    useMeta({
+    useMeta(() => ({
       title: 'Composition API Demo',
       meta: [{
         name: 'message',
-        content: message.value // It's not reactive
+        content: computedMessage.value
       }]
-    })
+    }))
 
     return {
       message,
