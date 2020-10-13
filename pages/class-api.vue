@@ -78,7 +78,7 @@ const SettingStore = namespace(settingStoreNamespace)
       title: 'Class API Demo',
       meta: [{
         name: 'message',
-        content: this.message
+        content: this.computedMessage
       }]
     }
   }
