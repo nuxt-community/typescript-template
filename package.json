@@ -1,7 +1,7 @@
 {
   "name": "nuxt-community-typescript-template",
   "description": "A boilerplate to start a Nuxt+TS project quickly",
-  "version": "2.14.6",
+  "version": "2.14.7",
   "private": true,
   "dependencies": {
     "@nuxt/typescript-runtime": "2.0.0",
