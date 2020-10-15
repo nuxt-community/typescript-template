@@ -7,7 +7,7 @@
     "@nuxt/typescript-runtime": "2.0.0",
     "@nuxtjs/composition-api": "0.13.3",
     "nuxt-property-decorator": "2.8.8",
-    "nuxt": "2.14.6"
+    "nuxt": "2.14.7"
   },
   "scripts": {
     "dev": "nuxt-ts",
@@ -17,7 +17,7 @@
     "lint": "eslint --max-warnings 0 --ext .ts,.vue ."
   },
   "devDependencies": {
-    "@nuxt/types": "2.14.6",
+    "@nuxt/types": "2.14.7",
     "@nuxt/typescript-build": "2.0.3",
     "@nuxtjs/eslint-config-typescript": "3.0.0",
     "eslint": "7.11.0"
