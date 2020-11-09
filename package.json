@@ -5,7 +5,7 @@
   "private": true,
   "dependencies": {
     "@nuxt/typescript-runtime": "2.0.0",
-    "@nuxtjs/composition-api": "0.14.0",
+    "@nuxtjs/composition-api": "0.15.0",
     "nuxt-property-decorator": "2.8.8",
     "nuxt": "2.14.7"
   },
