@@ -59,7 +59,6 @@ interface ToDo {
 export default defineComponent({
   fetchOnServer: false,
   middleware: 'user-agent',
-  head: {},
 
   setup (_props, context) {
     const message = ref("I'm defined on data()")
@@ -101,6 +100,8 @@ export default defineComponent({
       computedMessage,
       isDarkMode
     }
-  }
+  },
+
+  head: {}
 })
 </script>
