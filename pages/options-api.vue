@@ -62,12 +62,6 @@ export default Vue.extend({
   fetchOnServer: false,
   middleware: 'user-agent',
 
-  fetch () {
-    return fetch('https://jsonplaceholder.typicode.com/todos')
-      .then(response => response.json())
-      .then((data: ToDo[]) => { this.fetchedTodos = data })
-  },
-
   asyncData (context) {
     return {
       asyncMessage: "I'm defined on asyncData()",
@@ -81,6 +75,22 @@ export default Vue.extend({
       fetchedTodos: [] as ToDo[],
       asyncMessage: 'I will be overwritten by asyncData',
       userAgent: 'I will be overwritten by asyncData'
+    }
+  },
+
+  fetch () {
+    return fetch('https://jsonplaceholder.typicode.com/todos')
+      .then(response => response.json())
+      .then((data: ToDo[]) => { this.fetchedTodos = data })
+  },
+
+  head (): MetaInfo {
+    return {
+      title: 'Options API Demo',
+      meta: [{
+        name: 'message',
+        content: this.computedMessage
+      }]
     }
   },
 
@@ -102,16 +112,6 @@ export default Vue.extend({
     ...mapActions(settingStoreNamespace, {
       toggleDarkMode: actionType.TOGGLE_DARK_MODE
     })
-  },
-
-  head (): MetaInfo {
-    return {
-      title: 'Options API Demo',
-      meta: [{
-        name: 'message',
-        content: this.computedMessage
-      }]
-    }
   }
 })
 </script>
