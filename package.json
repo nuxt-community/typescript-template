@@ -20,6 +20,6 @@
     "@nuxt/types": "2.14.9",
     "@nuxt/typescript-build": "2.0.3",
     "@nuxtjs/eslint-config-typescript": "5.0.0",
-    "eslint": "7.14.0"
+    "eslint": "7.15.0"
   }
 }
