@@ -1,13 +1,13 @@
 {
   "name": "nuxt-community-typescript-template",
   "description": "A boilerplate to start a Nuxt+TS project quickly",
-  "version": "2.14.11",
+  "version": "2.14.12",
   "private": true,
   "dependencies": {
     "@nuxt/typescript-runtime": "2.0.0",
     "@nuxtjs/composition-api": "0.17.0",
     "nuxt-property-decorator": "2.8.8",
-    "nuxt": "2.14.11"
+    "nuxt": "2.14.12"
   },
   "scripts": {
     "dev": "nuxt-ts",
@@ -17,7 +17,7 @@
     "lint": "eslint --max-warnings 0 --ext .ts,.vue ."
   },
   "devDependencies": {
-    "@nuxt/types": "2.14.11",
+    "@nuxt/types": "2.14.12",
     "@nuxt/typescript-build": "2.0.3",
     "@nuxtjs/eslint-config-typescript": "5.0.0",
     "eslint": "7.15.0"
