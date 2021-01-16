@@ -4,7 +4,7 @@
   "version": "2.14.12",
   "private": true,
   "dependencies": {
-    "@nuxt/typescript-runtime": "2.0.0",
+    "@nuxt/typescript-runtime": "2.0.1",
     "@nuxtjs/composition-api": "0.18.1",
     "nuxt-property-decorator": "2.9.1",
     "nuxt": "2.14.12"
@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@nuxt/types": "2.14.12",
-    "@nuxt/typescript-build": "2.0.3",
+    "@nuxt/typescript-build": "2.0.4",
     "@nuxtjs/eslint-config-typescript": "5.0.0",
     "eslint": "7.17.0"
   }
