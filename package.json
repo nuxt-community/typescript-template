@@ -4,16 +4,15 @@
   "version": "2.15.0",
   "private": true,
   "dependencies": {
-    "@nuxt/typescript-runtime": "2.0.2",
     "@nuxtjs/composition-api": "0.20.2",
     "nuxt-property-decorator": "2.9.1",
     "nuxt": "2.15.2"
   },
   "scripts": {
-    "dev": "nuxt-ts",
-    "build": "nuxt-ts build",
-    "start": "nuxt-ts start",
-    "generate": "nuxt-ts generate",
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
     "lint": "eslint --max-warnings 0 --ext .ts,.vue ."
   },
   "devDependencies": {
