@@ -1,7 +1,7 @@
 {
   "name": "nuxt-community-typescript-template",
   "description": "A boilerplate to start a Nuxt+TS project quickly",
-  "version": "2.15.2",
+  "version": "2.15.3",
   "private": true,
   "dependencies": {
     "@nuxtjs/composition-api": "0.22.0",
