@@ -4,7 +4,7 @@
   "version": "2.15.4",
   "private": true,
   "dependencies": {
-    "@nuxtjs/composition-api": "0.23.2",
+    "@nuxtjs/composition-api": "0.23.3",
     "nuxt-property-decorator": "2.9.1",
     "nuxt": "2.15.4"
   },
