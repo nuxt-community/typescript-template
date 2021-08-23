@@ -45,7 +45,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { MetaInfo } from 'vue-meta'
+import type { MetaInfo } from 'vue-meta'
 import { mapActions, mapState } from 'vuex'
 
 import type { RootState } from '~/store'

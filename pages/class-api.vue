@@ -45,7 +45,7 @@
 
 <script lang="ts">
 import { Component, Vue, namespace, State } from 'nuxt-property-decorator'
-import { MetaInfo } from 'vue-meta'
+import type { MetaInfo } from 'vue-meta'
 
 import type { RootState } from '~/store'
 import { namespace as settingStoreNamespace, SettingState, actionType } from '~/store/setting'
