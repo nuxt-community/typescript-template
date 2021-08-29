@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 delete_composition()
 {
   rm pages/composition-api.vue
