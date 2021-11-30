@@ -14,4 +14,7 @@
 </template>
 
 <script lang="ts">
+export default {
+  name: 'PageIndex'
+}
 </script>
