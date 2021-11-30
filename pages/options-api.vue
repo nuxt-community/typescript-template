@@ -72,9 +72,7 @@ export default Vue.extend({
   data () {
     return {
       message: "I'm defined on data()",
-      fetchedTodos: [] as ToDo[],
-      asyncMessage: 'I will be overwritten by asyncData',
-      userAgent: 'I will be overwritten by asyncData'
+      fetchedTodos: [] as ToDo[]
     }
   },
 
