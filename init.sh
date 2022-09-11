@@ -57,4 +57,4 @@ esac
 
 rm -f package.json.bak nuxt.config.ts.bak pages/index.vue.bak init.sh
 
-echo "Initialized with your choice!\n\nRun npm/yarn install, then commit all changes"
+echo "Initialized with your choice\!\n\nRun npm/yarn install, then commit all changes"
