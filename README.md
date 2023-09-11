@@ -1,6 +1,6 @@
 # Nuxt TypeScript starter template
 
-A [Nuxt.js](https://github.com/nuxt/nuxt.js) + [@nuxt/typescript](https://github.com/nuxt/typescript) starter project template.
+A [Nuxt 2](https://github.com/nuxt/nuxt.js) + [@nuxt/typescript](https://github.com/nuxt/typescript) starter project template.
 
 ## Setup
 
