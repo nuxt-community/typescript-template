@@ -15,7 +15,7 @@ jobs:
         api: [options, class, composition]
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Run initializing script
         run: COMPONENT_API=${{ matrix.api }} ./init.sh
