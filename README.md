@@ -1,3 +1,6 @@
+> [!NOTE]
+> This repository is archived. This template was built for Nuxt 2, which reached end of life on June 30, 2024.
+
 # Nuxt TypeScript starter template
 
 A [Nuxt 2](https://github.com/nuxt/nuxt.js) + [@nuxt/typescript](https://github.com/nuxt/typescript) starter project template.
